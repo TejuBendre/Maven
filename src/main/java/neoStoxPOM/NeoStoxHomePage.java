@@ -66,6 +66,10 @@ public class NeoStoxHomePage
 		String accBalance=acBalance.getText();
 		Reporter.log("Getting Account Balance", true);
 		Reporter.log("Account Balance is:    "+accBalance,true);
+		
+		
+		
+		
 		return accBalance;
 	}
 	
