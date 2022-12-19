@@ -76,6 +76,9 @@ public class NeoStoxHomePage
 		UtilityNew.wait(driver, 1000);
 		logOutButton.click();
 		Reporter.log("Logging Out", true);
+		Reporter.log("Logging Out", true);
 	}
+	
+	
 
 }
