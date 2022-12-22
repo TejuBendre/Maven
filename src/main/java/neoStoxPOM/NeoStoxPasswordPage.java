@@ -13,6 +13,9 @@ import neoStoxUtility.UtilityNew;
 public class NeoStoxPasswordPage
 {
 	@FindBy(id="txt_accesspin")private WebElement passwordField;
+	
+	
+	
 	@FindBy(id="lnk_submitaccesspin")private WebElement submitButton;
 	
 	public NeoStoxPasswordPage(WebDriver driver)
