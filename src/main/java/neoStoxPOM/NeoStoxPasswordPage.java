@@ -18,6 +18,8 @@ public class NeoStoxPasswordPage
 	public NeoStoxPasswordPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void enterPassword(WebDriver driver,String pwd)
