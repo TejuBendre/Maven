@@ -18,12 +18,13 @@ public class NeoStoxPasswordPage
 	public NeoStoxPasswordPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
-		PageFactory.initElements(driver, this);
-		PageFactory.initElements(driver, this);
+		
 	}
 	
 	public void enterPassword(WebDriver driver,String pwd)
 	{
+		UtilityNew.wait(driver, 3000);
+		UtilityNew.wait(driver, 3000);
 		UtilityNew.wait(driver, 3000);
 		passwordField.sendKeys(pwd);
 		Reporter.log("Entering Password", true);
