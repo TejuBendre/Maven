@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+//import org.testng.Reporter;
 
 import neoStoxUtility.UtilityNew;
 
@@ -24,14 +24,14 @@ public class NeoStoxPasswordPage
 	{
 		UtilityNew.wait(driver, 3000);
 		passwordField.sendKeys(pwd);
-		Reporter.log("Entering Password", true);
+		//Reporter.log("Entering Password", true);
 	}
 	
 	public void clickOnSubmitButton(WebDriver driver)
 	{
 		UtilityNew.wait(driver, 3000);
 		submitButton.click();
-		Reporter.log("Clicking on Submit Button",true);
+		//Reporter.log("Clicking on Submit Button",true);
 	}
 
 }

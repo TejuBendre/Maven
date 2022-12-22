@@ -6,7 +6,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
-import org.testng.Reporter;
+//import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -63,7 +63,7 @@ public class ValidateNeoStoxAccBalanceNew extends BaseNew
   {
 	  Assert.assertNotNull(home.getAccountBalance(driver), "TC failed unable to fetch account balance");
 	  //Utility.screenShot(driver, "accBalance"); instead of this we use listener to get screenshot in neostoxUtility package
-	  Assert.fail();
+	//  Assert.fail();
   }
   
   @Test(priority = -1)
@@ -84,7 +84,7 @@ public class ValidateNeoStoxAccBalanceNew extends BaseNew
   @AfterClass
   public void closeBrowser()
   {
-	  Reporter.log("Closing browser",true);
+	 // Reporter.log("Closing browser",true);
 	  driver.close();
   }
 }

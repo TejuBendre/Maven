@@ -4,7 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+//to run this project in cmd we comment out the reporter
+//import org.testng.Reporter;
 
 import neoStoxUtility.UtilityNew;
 
@@ -21,6 +22,11 @@ public class NeoStoxHomePage
 	public NeoStoxHomePage(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
+		
+		
+		
+		
+		
 	}
 	
 	
@@ -35,16 +41,16 @@ public class NeoStoxHomePage
 		UtilityNew.wait(driver, 1000);
 		Thread.sleep(1000);
 		okButton.click();
-		Reporter.log("Handling PopUp", true);
-		Reporter.log("Clicking on ok button of popup", true);
+		//Reporter.log("Handling PopUp", true);
+		//Reporter.log("Clicking on OK button of popup", true);
 		UtilityNew.wait(driver, 1000);
 		
 		closeButton.click();
-		Reporter.log("Clcking on close button of popoup", true);
+		//Reporter.log("Clicking on close button of popoup", true);
 		}
 		else
 		{
-			Reporter.log("Threre is no popup", true);
+			//Reporter.log("There is no popup", true);
 			Thread.sleep(1000);
 		}
 	}
@@ -53,9 +59,9 @@ public class NeoStoxHomePage
 	{
 		UtilityNew.wait(driver, 1000);
 		String actaulUserName = userName.getText();
-		Reporter.log("Getting Actual Username", true);
+		//Reporter.log("Getting Actual Username", true);
 		String realUserName=actaulUserName.substring(3);
-		Reporter.log("Actual User name is :"+realUserName,true);
+		//Reporter.log("Actual User name is :"+realUserName,true);
 		return actaulUserName;
 		
 	}
@@ -64,8 +70,8 @@ public class NeoStoxHomePage
 	{
 		UtilityNew.wait(driver, 1000);
 		String accBalance=acBalance.getText();
-		Reporter.log("Getting Account Balance", true);
-		Reporter.log("Account Balance is:    "+accBalance,true);
+		//Reporter.log("Getting Account Balance", true);
+		//Reporter.log("Account Balance is:    "+accBalance,true);
 		
 		
 		
@@ -79,10 +85,10 @@ public class NeoStoxHomePage
 		userName.click();
 		UtilityNew.wait(driver, 1000);
 		logOutButton.click();
-		Reporter.log("Logging Out", true);
-		Reporter.log("Logging Out", true);
-		Reporter.log("Logging Out", true);
-		Reporter.log("Logging Out", true);
+		//Reporter.log("Logging Out", true);
+	//	Reporter.log("Logging Out", true);
+		//Reporter.log("Logging Out", true);
+		//Reporter.log("Logging Out", true);
 		
 	}
 

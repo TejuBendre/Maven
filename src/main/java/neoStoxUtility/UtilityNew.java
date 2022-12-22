@@ -12,7 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.Reporter;
+//import org.testng.Reporter;
 
 public class UtilityNew {
 
@@ -39,7 +39,7 @@ public class UtilityNew {
 		
 		String value = prop.getProperty(key);
 		//System.out.println(value);
-		Reporter.log("Reading"+key+"from property file", false);
+		//Reporter.log("Reading"+key+"from property file", false);
 		return value;
 	}
 	public static void screenShot(WebDriver driver,String screenShotName) throws IOException
@@ -48,7 +48,7 @@ public class UtilityNew {
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		File dest = new File("T:\\Velocity\\Screenshot\\"+screenShotName+".png");
 		FileHandler.copy(src, dest);
-		Reporter.log("Taking ScreenShot",true);
+	//	Reporter.log("Taking ScreenShot",true);
 	}
 	
 	public static void scrollIntoView(WebDriver driver,WebElement element)
@@ -56,12 +56,12 @@ public class UtilityNew {
 		wait(driver,500);
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("argumnets[0].scrollIntoView(true)",element);
-		Reporter.log("Scrolling into view", true);
+		//Reporter.log("Scrolling into view", true);
 	}
 	
 	public static void wait(WebDriver driver,int waitTime)
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(waitTime));
-		Reporter.log("Waiting for"+waitTime+"ms", true);
+		//Reporter.log("Waiting for"+waitTime+"ms", true);
 	}
 }

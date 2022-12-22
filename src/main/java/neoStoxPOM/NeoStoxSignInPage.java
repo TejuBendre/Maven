@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+//import org.testng.Reporter;
 
 import neoStoxUtility.UtilityNew;
 
@@ -22,7 +22,7 @@ public class NeoStoxSignInPage
 	public void clickOnSignButton(WebDriver driver)
 	{
 		UtilityNew.wait(driver, 1000);
-		Reporter.log("Clicking on Sign In Button", true);
+	//	Reporter.log("Clicking on Sign In Button", true);
 		signInButton.click();
 	}
 }
